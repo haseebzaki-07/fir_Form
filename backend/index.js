@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 
-const dbUrl = "mongodb+srv://haseebzaki:hzaki123@cluster0.k7v9clo.mongodb.net/fir_form";
+const dbUrl = "";
 
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
