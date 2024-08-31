@@ -18,8 +18,15 @@ app.use(cors({
 // Middleware to parse JSON
 app.use(express.json());
 
+<<<<<<< HEAD
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI, {
+=======
+
+const dbUrl = "";
+
+mongoose.connect(dbUrl, {
+>>>>>>> 4e971dfbee08a95ae247ada77eacb7f593ebc2c5
   useNewUrlParser: true,
   useUnifiedTopology: true,
   serverSelectionTimeoutMS: 50000, // Increase timeout
