@@ -3,20 +3,20 @@ const mongoose = require('mongoose');
 const personalInfoSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    // required: true
   },
   email: {
     type: String,
-    required: true
+    // required: true
   },
   phoneNumber: {
     type: String,
-    required: true
+    // required: true
     
   },
   address: {
     type: String,
-    required: true
+    // required: true
   }
 });
 
@@ -26,20 +26,20 @@ const PersonalInfo = mongoose.model('PersonalInfo', personalInfoSchema);
 const complaintDetailsSchema = new mongoose.Schema({
     complaintID: {
       type: String,
-      required: true,
+      // required: true,
       unique: true
     },
     dateOfComplaint: {
       type: Date,
-      required: true
+      // required: true
     },
     descriptionOfIncident: {
       type: String,
-      required: true
+      // required: true
     },
     incidentDateTime: {
       type: Date,
-      required: true
+      // required: true
     }
   });
   
@@ -49,15 +49,15 @@ const complaintDetailsSchema = new mongoose.Schema({
   const transactionDetailsSchema = new mongoose.Schema({
     transactionID: {
       type: String,
-      required: false // Not all complaints may have a transaction
+      // required: false // Not all complaints may have a transaction
     },
     amountLost: {
       type: Number,
-      required: false
+      // required: false
     },
     bankDetails: {
       type: String,
-      required: false
+      // required: false
     }
   });
   
@@ -84,11 +84,11 @@ const complaintDetailsSchema = new mongoose.Schema({
   const additionalInfoSchema = new mongoose.Schema({
     suspectedIndividualsOrEntities: {
       type: String,
-      required: false
+      // required: false
     },
     desiredAction: {
       type: String,
-      required: false
+      // required: false
     }
   });
   
@@ -98,11 +98,11 @@ const complaintDetailsSchema = new mongoose.Schema({
   const consentAndAcknowledgementSchema = new mongoose.Schema({
     consentToProcessData: {
       type: Boolean,
-      required: true
+      // required: true
     },
     acknowledgementOfTerms: {
       type: Boolean,
-      required: true
+      // required: true
     }
   });
   
